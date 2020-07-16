@@ -7,6 +7,8 @@ main :: IO ()
 main = do
   let sudoku = exampleBoard2
   askSudoku sudoku
+  -- sudoku <- randomSudokuExercise
+  -- return ()
 
 askSudoku :: [[Int]] -> IO ()
 askSudoku sudoku = do

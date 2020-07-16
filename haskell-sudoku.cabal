@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 4cbab8a670f863ad045559a67176bb97a8bb93393b205d91fc8affe2f38e1b95
+-- hash: 42d3d4d343ce53105ce3a7bed5ae63850abe640492a7e7ca6c11811bcecdbbec
 
 name:           haskell-sudoku
 version:        0.1.0.0
@@ -35,6 +35,7 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , random
   default-language: Haskell2010
 
 executable haskell-sudoku-exe
@@ -47,6 +48,7 @@ executable haskell-sudoku-exe
   build-depends:
       base >=4.7 && <5
     , haskell-sudoku
+    , random
   default-language: Haskell2010
 
 test-suite haskell-sudoku-test
@@ -60,4 +62,5 @@ test-suite haskell-sudoku-test
   build-depends:
       base >=4.7 && <5
     , haskell-sudoku
+    , random
   default-language: Haskell2010
